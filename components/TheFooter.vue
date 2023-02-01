@@ -28,4 +28,8 @@ footer {
     gap: 20px;
   }
 }
+
+a {
+  text-decoration: none;
+}
 </style>

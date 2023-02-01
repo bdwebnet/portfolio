@@ -15,4 +15,8 @@
 header {
   user-select: none;
 }
+
+a {
+  text-decoration: none;
+}
 </style>

@@ -7,8 +7,12 @@ export default defineNuxtConfig({
       title: 'BD',
       meta: [
         { name: 'description', content: 'BDs Portfolio' }
-      ]
-    }
+      ],
+      htmlAttrs: {
+        lang: 'de'
+      }
+    },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
   typescript: {
     strict: true

@@ -19,6 +19,7 @@ html {
   color: $primary;
   font-family: "Roboto" , sans-serif;
   overflow-x: hidden;
+  overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-padding-top: 50px;
 }
@@ -51,4 +52,15 @@ button {
   border-radius: 10px;
   padding: 10px 15px;
   cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: $primary;
+  transition: all 0.3s;
+
+  &:hover {
+    text-underline-offset: 2px;
+  }
 }
