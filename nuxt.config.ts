@@ -1,12 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'BD',
+      title: 'Benedikt Dalferth',
       meta: [
-        { name: 'description', content: 'BDs Portfolio' }
+        { name: 'description', content: 'Benedikts Dalferths Portfolio' }
       ],
       htmlAttrs: {
         lang: 'de'

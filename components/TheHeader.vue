@@ -1,19 +1,29 @@
+<script setup lang="ts">
+const items = [
+  { title: 'Zurück zur Startseite', link: '/' }
+]
+</script>
+
 <template>
   <header>
     <div class="container">
-      <NuxtLink to="/">
-        BD
+      <NuxtLink v-for="item in items" :key="item.title" :to="item.link">
+        {{ item.title }}
       </NuxtLink>
     </div>
   </header>
 </template>
 
-<script lang="ts" setup>
-</script>
-
 <style lang="scss" scoped>
 header {
-  user-select: none;
+  padding: 10px 0;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 a {

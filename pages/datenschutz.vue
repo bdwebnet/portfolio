@@ -1,3 +1,9 @@
+<script setup>
+definePageMeta({
+  layout: 'subpage'
+})
+</script>
+
 <template>
   <div class="container">
     <ContentDoc path="/datenschutz">

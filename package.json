@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --fix --ext .vue,.ts,.js,.mjs ."
+    "lint": "eslint --fix --ext .vue,.ts,.js,.mjs,.scss ."
   },
   "devDependencies": {
     "@nuxt/content": "^2.4.3",
@@ -15,5 +15,12 @@
     "modern-normalize": "^1.1.0",
     "nuxt": "^3.1.1",
     "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "simple-icons": "^8.4.0"
   }
 }
