@@ -62,7 +62,7 @@ useHead({ title: null })
         <h2>Kontakt</h2>
       </div>
       <div class="content">
-        <TheContactForm />
+        <TheContactSection />
       </div>
     </section>
   </div>
