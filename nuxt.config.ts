@@ -29,6 +29,16 @@ export default defineNuxtConfig({
     }
   },
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Nunito: {
+            wght: [300, 600]
+          }
+        }
+      }
+    ]
   ]
 })
