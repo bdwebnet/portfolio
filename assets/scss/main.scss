@@ -24,11 +24,11 @@ html {
 }
 
 html {
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 body {
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 * {
