@@ -1,9 +1,10 @@
+<script setup>
+</script>
+
 <template>
   <div>
     <form action="#" method="post">
       <fieldset>
-        <legend>Deine Angaben</legend>
-
         <p>
           <input id="name" type="text" required> <label for="name">Dein Name</label>
         </p>
@@ -17,7 +18,7 @@
         <textarea required />
       </fieldset>
 
-      <fieldset>
+      <fieldset id="buttons">
         <button type="submit">
           Absenden
         </button>
@@ -29,9 +30,65 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<style lang="scss" scoped>
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 
-<style scoped>
+  fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 
+    p {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid $primary;
+      padding: 0.3em 0;
+
+      &:focus {
+        border-bottom-width: 2px;
+      }
+    }
+
+    input, textarea {
+      background-color: inherit;
+      font-size: inherit;
+      color: inherit;
+      font-family: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      border: 1px solid $primary;
+      padding: 0.5em;
+      border-radius: 0.3em;
+
+      &:focus {
+        border-width: 2px;
+      }
+    }
+  }
+
+  #buttons {
+    display: flex;
+    gap: 1em;
+
+    button {
+      width: 100%;
+    }
+  }
+}
 </style>
