@@ -2,6 +2,8 @@
 import projects from '~/utils/projects'
 import skills from '~/utils/skills'
 import TheContactForm from '~/components/TheContactForm.vue'
+
+useHead({ title: null })
 </script>
 
 <template>

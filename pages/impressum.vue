@@ -15,8 +15,11 @@ definePageMeta({
 </template>
 
 <style lang="scss" scoped>
-:deep(a) {
-  text-decoration: none;
-  color: inherit;
+
+:deep(h1), :deep(h2) {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 </style>

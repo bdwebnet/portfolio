@@ -1,6 +1,18 @@
+<script setup>
+useHead({
+  titleTemplate:
+      (titleChunk) => {
+        const siteTitle = 'Benedikt Dalferth'
+        return titleChunk ? `${titleChunk} – ${siteTitle}` : siteTitle
+      }
+})
+</script>
+
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <Transition name="page" mode="out-in" @after-enter="window.scrollTo({top: 0})">
+      <NuxtPage />
+    </Transition>
   </NuxtLayout>
 </template>
 

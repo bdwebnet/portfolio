@@ -13,7 +13,8 @@ export default defineNuxtConfig({
         lang: 'de'
       }
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in', onAfterEnter: () => { window.scrollTo({ top: 0 }) } },
+    layoutTransition: { name: 'layout', mode: 'out-in' }
   },
   typescript: {
     strict: true
