@@ -197,16 +197,20 @@ useHead({ title: null })
       margin: 0;
     }
 
-    &#projects a {
-      text-decoration: none;
-      color: inherit;
+    &#projects {
+      a {
+        text-decoration: none;
+        color: inherit;
 
-      h3 svg {
-        transition: all 0.2s ease-in-out;
-      }
+        h3 svg {
+          transition: all 0.2s ease-in-out;
+        }
 
-      &:hover h3 svg {
-        margin-left: 0.4em;
+        &:hover {
+          h3 svg {
+            margin-left: 0.4em;
+          }
+        }
       }
     }
   }
@@ -223,7 +227,7 @@ useHead({ title: null })
     background-color: inherit;
     color: inherit;
     filter: saturate(0) brightness(0);
-    opacity: 0.8;
+    opacity: 0.6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +244,7 @@ useHead({ title: null })
     }
 
     &:hover {
-      filter: saturate(1);
+      filter: none;
       opacity: 1;
       transform: scale(110%);
       cursor: pointer;
