@@ -18,7 +18,7 @@ useHead({ title: null })
         </p>
       </div>
 
-      <div>
+      <div id="kontakt">
         <p>
           Du erreichst mich unter <a href="mailto:benedikt@dalferth.net">benedikt@dalferth.net</a>.
         </p>
@@ -55,15 +55,6 @@ useHead({ title: null })
       </div>
 
       <TheProjectSection class="content" />
-    </section>
-
-    <section id="kontakt" class="content-section">
-      <div class="title">
-        <h2>Kontakt</h2>
-      </div>
-      <div class="content">
-        <TheContactSection />
-      </div>
     </section>
   </div>
 </template>
