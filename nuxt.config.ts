@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         lang: 'de'
       }
     },
-    pageTransition: { name: 'page', mode: 'out-in', onAfterEnter: () => { window.scrollTo({ top: 0 }) } },
+    pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' }
   },
   typescript: {
@@ -23,7 +23,9 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "@/assets/scss/main.scss";'
+          additionalData:
+              '@import "@/assets/scss/_variables.scss";' +
+              '@import "@/assets/scss/main.scss";'
         }
       }
     }

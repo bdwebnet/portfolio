@@ -10,9 +10,7 @@ useHead({
 
 <template>
   <NuxtLayout>
-    <Transition name="page" mode="out-in" @after-enter="window.scrollTo({top: 0})">
-      <NuxtPage />
-    </Transition>
+    <NuxtPage />
   </NuxtLayout>
 </template>
 
