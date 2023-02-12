@@ -3,7 +3,7 @@ import skills from '~/utils/skills'
 </script>
 
 <template>
-  <div id="skills">
+  <div id="skill-wrapper">
     <div v-for="(skill, index) in skills" :key="index">
       <a
         v-if="skill.link"
@@ -24,7 +24,7 @@ import skills from '~/utils/skills'
 </template>
 
 <style lang="scss" scoped>
-#skills {
+#skill-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: calc($space * 1.5);
@@ -58,7 +58,7 @@ import skills from '~/utils/skills'
 }
 
 @media (min-width: $md) {
-  #skills {
+  #skill-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 

@@ -10,9 +10,13 @@ useHead({ title: null })
       <TheHeroSection />
     </section>
 
-    <section id="about" class="content-section">
+    <section class="content-section">
       <div class="title">
-        <h2>Über mich</h2>
+        <h2 id="about">
+          <a href="#about">
+            Über mich
+          </a>
+        </h2>
       </div>
 
       <TheAboutSection class="content" />
@@ -20,7 +24,11 @@ useHead({ title: null })
 
     <section class="content-section">
       <div class="title">
-        <h2>Fähigkeiten</h2>
+        <h2 id="skills">
+          <a href="#skills">
+            Fähigkeiten
+          </a>
+        </h2>
       </div>
 
       <TheSkillSection class="content" />
@@ -28,7 +36,11 @@ useHead({ title: null })
 
     <section class="content-section">
       <div class="title">
-        <h2>Projekte</h2>
+        <h2 id="projects">
+          <a href="#projects">
+            Projekte
+          </a>
+        </h2>
       </div>
 
       <TheProjectSection class="content" />
