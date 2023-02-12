@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const items = [
-  { title: 'Kontakt', link: '/#kontakt' },
+  { title: 'Startseite', link: '/' },
   { title: 'Impressum', link: '/impressum' },
   { title: 'Datenschutz', link: '/datenschutz' }
 ]
@@ -19,13 +19,14 @@ const items = [
 <style scoped lang="scss">
 footer {
   margin-top: auto;
-  padding: 10px 0;
+  padding: $space 0;
 
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: $space;
   }
 }
 

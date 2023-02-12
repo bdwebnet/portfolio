@@ -1,2 +1,29 @@
 $primary: #2D3047;
 $secondary: #FFFFFA;
+
+$fontWeightNormal: 300;
+$fontWeightBold: 600;
+
+$borderRadius: 1em;
+$borderWidth: 1px;
+
+$scaleSmaller: 95%;
+
+// Tablet upright
+$md: 768px;
+
+// Tablet normal
+$lg: 1024px;
+
+// Desktop
+$xl: 1280px;
+
+$space: 1em;
+
+@media (min-width: $lg) {
+  $space: 2em;
+}
+
+$sectionGap: calc($space * 3);
+
+$transition: all 0.2s ease-in-out;

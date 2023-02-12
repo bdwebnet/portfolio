@@ -3,17 +3,21 @@ import skills from '~/utils/skills'
 </script>
 
 <template>
-  <div>
-    <div id="skills">
-      <div v-for="(skill, index) in skills" :key="index">
-        <a v-if="skill.link" :href="skill.link" target="_blank" :title="skill.title" class="skill-content">
-          <div class="icon" :style="`fill: ${skill.color}`" v-html="skill.icon" />
-          <h3>{{ skill.title }}</h3>
-        </a>
-        <div v-else class="skill-content">
-          <div class="icon" :style="`fill: ${skill.color}`" v-html="skill.icon" />
-          <h3>{{ skill.title }}</h3>
-        </div>
+  <div id="skills">
+    <div v-for="(skill, index) in skills" :key="index">
+      <a
+        v-if="skill.link"
+        :href="skill.link"
+        target="_blank"
+        :title="skill.title"
+        class="skill-content"
+      >
+        <div class="icon" :style="`fill: ${skill.color}`" v-html="skill.icon" />
+        <p>{{ skill.title }}</p>
+      </a>
+      <div v-else class="skill-content">
+        <div class="icon" :style="`fill: ${skill.color}`" v-html="skill.icon" />
+        <p>{{ skill.title }}</p>
       </div>
     </div>
   </div>
@@ -22,8 +26,8 @@ import skills from '~/utils/skills'
 <style lang="scss" scoped>
 #skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc($space * 1.5);
 
   .skill-content {
     text-decoration: none;
@@ -36,22 +40,41 @@ import skills from '~/utils/skills'
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    gap: calc($space / 3);
+
+    p {
+      margin: 0;
+    }
 
     .icon {
-      width: 3em;
+      width: 2.5em;
 
       svg {
         width: 100%;
         height: auto;
       }
     }
+  }
+}
 
-    &:hover {
-      filter: none;
-      opacity: 1;
-      transform: scale(110%);
-      cursor: pointer;
+@media (min-width: $md) {
+  #skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .skill-content {
+      transition: $transition;
+
+      .icon {
+        width: 3em;
+      }
+
+      &:hover {
+        filter: none;
+        opacity: 1;
+        transform: scale(110%);
+        cursor: pointer;
+      }
     }
   }
 }

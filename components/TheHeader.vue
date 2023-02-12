@@ -8,7 +8,9 @@ const items = [
   <header>
     <div class="container">
       <NuxtLink v-for="item in items" :key="item.title" :to="item.link">
-        {{ item.title }}
+        <button>
+          {{ item.title }}
+        </button>
       </NuxtLink>
     </div>
   </header>
@@ -16,17 +18,11 @@ const items = [
 
 <style lang="scss" scoped>
 header {
-  padding: 10px 0;
+  padding: $space 0;
 
   .container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
   }
-}
-
-a {
-  text-decoration: none;
 }
 </style>

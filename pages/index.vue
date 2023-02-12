@@ -1,36 +1,13 @@
 <script setup lang="ts">
-import ArrowDown from '~/components/icons/ArrowDown.vue'
+import TheHeroSection from '~/components/TheHeroSection.vue'
 
 useHead({ title: null })
 </script>
 
 <template>
   <div class="container">
-    <section id="hero-section">
-      <div>
-        <h1>Hi!</h1>
-      </div>
-
-      <div>
-        <p class="text-lg">
-          Ich bin <strong>Benedikt Dalferth</strong>, ein Web-Entwickler aus dem Raum Stuttgart.
-          Ich kreiere Websites und Webanwendungen mit dem Fokus auf Benutzerfreundlichkeit und Datenschutz.
-        </p>
-      </div>
-
-      <div id="kontakt">
-        <p>
-          Du erreichst mich unter <a href="mailto:benedikt@dalferth.net">benedikt@dalferth.net</a>.
-        </p>
-      </div>
-
-      <div id="scroll-down">
-        <a href="#about" title="Zum Inhalt scrollen">
-          <button>
-            <ArrowDown />
-          </button>
-        </a>
-      </div>
+    <section>
+      <TheHeroSection />
     </section>
 
     <section id="about" class="content-section">
@@ -63,80 +40,40 @@ useHead({ title: null })
 .container {
   display: flex;
   flex-direction: column;
-  gap: 10em;
-}
-
-#hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5vh;
-  min-height: 100vh;
-  position: relative;
-
-  #scroll-down {
-    position: absolute;
-    right: 0;
-    bottom: 5vh;
-
-    a {
-      padding: 1em 0;
-      box-sizing: content-box;
-    }
-
-    button {
-      padding: inherit;
-    }
-
-    a, button {
-      background-color: inherit;
-      color: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-      transition: all ease-in-out 0.3s;
-      cursor: pointer;
-
-      svg {
-        width: 3em;
-        height: auto;
-      }
-
-      &:hover {
-        transform: translateY(1.5em);
-      }
-    }
-  }
+  gap: $sectionGap;
 }
 
 .content-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: $space;
 
-  .title {
-    text-align: right;
-
-    h2 {
-      margin: 0;
-      text-transform: uppercase;
-    }
+  .title h2 {
+    margin-top: 0;
+    text-transform: uppercase;
   }
 
   .content {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    padding-left: calc($space * 2);
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: calc($space / 2);
+  }
+}
 
-    :deep(h3) {
-      margin: 0;
+@media (min-width: $lg) {
+  .content-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .title {
+      text-align: right;
     }
 
-    :deep(p:first-child) {
-      margin: 0;
+    .content {
+      grid-column-start: 2;
+      grid-column-end: 4;
     }
-
   }
 }
 
