@@ -20,7 +20,7 @@ useHead({
 .page-leave-active,
 .layout-enter-active,
 .layout-leave-active{
-  transition: all 0.5s;
+  transition: all 0.4s ease-in-out;
   user-select: none;
 }
 
