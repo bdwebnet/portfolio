@@ -13,7 +13,7 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
 
     <div id="scroll-down">
       <a href="#about" title="Zum Inhalt scrollen">
-        <button>
+        <button title="Zum Inhalt scrollen">
           <ArrowDown />
         </button>
       </a>

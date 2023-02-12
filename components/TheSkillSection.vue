@@ -35,7 +35,7 @@ import skills from '~/utils/skills'
     background-color: inherit;
     color: inherit;
     filter: saturate(0) brightness(0);
-    opacity: 0.6;
+    opacity: 0.7;
     display: flex;
     flex-direction: column;
     align-items: center;
