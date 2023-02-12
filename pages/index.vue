@@ -79,6 +79,7 @@ onMounted(() => {
     padding: $space 0;
     background-color: $secondary;
     z-index: 1;
+    text-align: center;
 
     h2 {
       margin-top: 0;
@@ -88,7 +89,6 @@ onMounted(() => {
   }
 
   .content {
-    padding-left: calc($space * 2);
     display: flex;
     flex-direction: column;
     gap: calc($space / 2);
@@ -99,6 +99,7 @@ onMounted(() => {
   .content-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: calc($space * 2);
 
     .title {
       text-align: right;
