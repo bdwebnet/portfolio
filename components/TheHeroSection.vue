@@ -5,7 +5,7 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
 <template>
   <div id="hero-section-wrapper" class="fade-in">
     <h1>
-      Hi!
+      <a href="#hero-section">Hi!</a>
     </h1>
 
     <p id="introduction-text">
