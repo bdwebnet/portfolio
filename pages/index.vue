@@ -6,13 +6,13 @@ useHead({ title: null })
 
 <template>
   <div class="container">
-    <section>
+    <section id="hero-section">
       <TheHeroSection />
     </section>
 
-    <section class="content-section">
+    <section id="about" class="content-section">
       <div class="title">
-        <h2 id="about">
+        <h2>
           <a href="#about">
             Über mich
           </a>
@@ -22,9 +22,9 @@ useHead({ title: null })
       <TheAboutSection class="content" />
     </section>
 
-    <section class="content-section">
+    <section id="skills" class="content-section">
       <div class="title">
-        <h2 id="skills">
+        <h2>
           <a href="#skills">
             Fähigkeiten
           </a>
@@ -34,9 +34,9 @@ useHead({ title: null })
       <TheSkillSection class="content" />
     </section>
 
-    <section class="content-section">
+    <section id="projects" class="content-section">
       <div class="title">
-        <h2 id="projects">
+        <h2>
           <a href="#projects">
             Projekte
           </a>

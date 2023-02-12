@@ -3,7 +3,7 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
 </script>
 
 <template>
-  <div id="hero-section">
+  <div id="hero-section-wrapper">
     <h1>Hi!</h1>
 
     <p id="introduction-text">
@@ -22,7 +22,7 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
 </template>
 
 <style scoped lang="scss">
-#hero-section {
+#hero-section-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
