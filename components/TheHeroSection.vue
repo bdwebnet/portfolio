@@ -7,16 +7,9 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
     <h1>Hi!</h1>
 
     <p id="introduction-text">
-      Ich bin <strong>Benedikt Dalferth</strong>, ein Web-Entwickler aus dem Raum Stuttgart.
-      Ich kreiere Websites und Webanwendungen
-      mit dem Fokus auf Benutzerfreundlichkeit und Datenschutz.
+      Ich bin <strong>Benedikt</strong>, ein Web-Entwickler aus dem Raum Stuttgart.
+      Ich kreiere Websites und weitere Webanwendungen.
     </p>
-
-    <div id="kontakt">
-      <p>
-        Du erreichst mich unter <a href="mailto:benedikt@dalferth.net">benedikt@dalferth.net</a>.
-      </p>
-    </div>
 
     <div id="scroll-down">
       <a href="#about" title="Zum Inhalt scrollen">
