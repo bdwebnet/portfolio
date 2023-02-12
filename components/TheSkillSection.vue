@@ -4,7 +4,7 @@ import skills from '~/utils/skills'
 
 <template>
   <div id="skill-wrapper">
-    <div v-for="(skill, index) in skills" :key="index">
+    <div v-for="(skill, index) in skills" :key="index" class="fade-in-left">
       <a
         v-if="skill.link"
         :href="skill.link"

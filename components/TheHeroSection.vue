@@ -3,8 +3,10 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
 </script>
 
 <template>
-  <div id="hero-section-wrapper">
-    <h1>Hi!</h1>
+  <div id="hero-section-wrapper" class="fade-in">
+    <h1>
+      Hi!
+    </h1>
 
     <p id="introduction-text">
       Ich bin <strong>Benedikt</strong>, ein Web-Entwickler aus dem Raum Stuttgart.

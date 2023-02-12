@@ -1,10 +1,20 @@
 <script setup>
+import animation from 'assets/js/animation.js'
+
 useHead({
   titleTemplate:
       (titleChunk) => {
         const siteTitle = 'Benedikt Dalferth'
         return titleChunk ? `${titleChunk} – ${siteTitle}` : siteTitle
       }
+})
+
+onMounted(() => {
+  animation()
+})
+
+onUpdated(() => {
+  animation()
 })
 </script>
 

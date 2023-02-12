@@ -2,18 +2,6 @@
 import TheHeroSection from '~/components/TheHeroSection.vue'
 
 useHead({ title: null })
-
-onMounted(() => {
-  let parent = document.querySelector('.title').parentElement
-
-  while (parent) {
-    const hasOverflow = getComputedStyle(parent).overflow
-    if (hasOverflow !== 'visible') {
-      console.log(hasOverflow, parent)
-    }
-    parent = parent.parentElement
-  }
-})
 </script>
 
 <template>

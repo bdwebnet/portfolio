@@ -5,7 +5,7 @@ import ArrowRight from '~/components/icons/ArrowRight.vue'
 
 <template>
   <div>
-    <div v-for="(project, index) in projects" :key="index">
+    <div v-for="(project, index) in projects" :key="index" class="fade-in-left">
       <a :href="project.link" target="_blank">
         <h3>
           {{ project.title }}
