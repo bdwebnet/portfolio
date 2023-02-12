@@ -41,7 +41,7 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
 
   @media (min-width: $md) {
     #introduction-text {
-      font-size: 2em;
+      font-size: 2.5em;
     }
   }
 
