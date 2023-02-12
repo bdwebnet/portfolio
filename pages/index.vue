@@ -71,10 +71,20 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: $space;
+  position: relative;
 
-  .title h2 {
-    margin-top: 0;
-    text-transform: uppercase;
+  .title {
+    position: sticky;
+    top: 0;
+    padding: $space 0;
+    background-color: $secondary;
+    z-index: 1;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
   }
 
   .content {
@@ -93,6 +103,7 @@ onMounted(() => {
     .title {
       text-align: right;
       position: relative;
+      padding: 0;
 
       h2 {
         position: sticky;
