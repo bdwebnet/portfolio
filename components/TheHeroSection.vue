@@ -33,8 +33,9 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: $space;
   min-height: 100vh;
+  gap: $space;
+
   position: relative;
 
   h1 {
@@ -58,26 +59,32 @@ import ArrowDown from '~/components/icons/ArrowDown.vue'
   }
 
   #scroll-down {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    bottom: 2vh;
+    display: none;
+  }
 
-    button {
-      padding: inherit;
-      border: none;
-    }
+  @media (min-width: $md) {
+    #scroll-down {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      bottom: 2vh;
 
-    a, button {
-      background-color: inherit;
-      color: inherit;
-      cursor: pointer;
+      button {
+        padding: inherit;
+        border: none;
+      }
 
-      svg {
-        width: 3em;
-        height: auto;
+      a, button {
+        background-color: inherit;
+        color: inherit;
+        cursor: pointer;
+
+        svg {
+          width: 3em;
+          height: auto;
+        }
       }
     }
   }
