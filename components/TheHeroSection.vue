@@ -14,8 +14,8 @@ onMounted(() => {
     </h1>
 
     <p id="introduction-text">
-      Ich bin <strong>Benedikt</strong>, ein Web-Entwickler aus dem Raum Stuttgart.
-      Ich kreiere Websites und weitere Webanwendungen.
+      Ich bin <strong>Benedikt</strong>, ein Web-Entwickler aus dem Raum Stuttgart
+      mit dem Fokus auf Benutzerfreundlichkeit und Datenschutz.
     </p>
 
     <div id="scroll-down">
