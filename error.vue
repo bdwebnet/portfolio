@@ -1,16 +1,12 @@
 <template>
-  <NuxtLayout>
+  <NuxtLayout name="subpage">
     <div class="container">
       <div v-if="error.statusCode === '404'">
         <h1>Seite nicht gefunden</h1>
       </div>
       <div v-else>
-        <h1>Es ist ein Fehler aufgetreten.</h1>
+        <h1>Es ist ein Fehler aufgetreten</h1>
       </div>
-
-      <NuxtLink to="/" role="button">
-        <button>Zurück zur Startseite</button>
-      </NuxtLink>
     </div>
   </NuxtLayout>
 </template>
