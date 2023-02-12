@@ -1,6 +1,11 @@
 <script setup>
 import projects from '~/utils/projects'
 import ArrowRight from '~/components/icons/ArrowRight.vue'
+import animation from 'assets/js/animation.js'
+
+onMounted(() => {
+  animation()
+})
 </script>
 
 <template>

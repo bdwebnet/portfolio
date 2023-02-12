@@ -1,3 +1,11 @@
+<script setup>
+import animation from 'assets/js/animation.js'
+
+onMounted(() => {
+  animation()
+})
+</script>
+
 <template>
   <div>
     <p class="fade-in-left">

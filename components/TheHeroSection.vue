@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import ArrowDown from '~/components/icons/ArrowDown.vue'
+import animation from 'assets/js/animation'
+
+onMounted(() => {
+  animation()
+})
 </script>
 
 <template>

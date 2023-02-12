@@ -1,5 +1,10 @@
 <script setup>
 import skills from '~/utils/skills'
+import animation from 'assets/js/animation.js'
+
+onMounted(() => {
+  animation()
+})
 </script>
 
 <template>
