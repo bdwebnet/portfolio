@@ -6,7 +6,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-margin-top: $space;
+  scroll-margin-top: calc($space * 2);
 }
 
 body,
