@@ -66,6 +66,7 @@ useHead({ title: null })
     top: 0;
     padding: $space 0;
     background-color: $secondary;
+    margin: 0 -#{$space};
     z-index: 1;
     text-align: center;
 
@@ -93,6 +94,7 @@ useHead({ title: null })
       text-align: right;
       position: relative;
       padding: 0;
+      margin: 0;
 
       h2 {
         position: sticky;
