@@ -9,7 +9,7 @@ onMounted(() => {
 
 <template>
   <div id="skill-wrapper">
-    <div v-for="(skill, index) in skills" :key="index" class="fade-in-left">
+    <div v-for="(skill, index) in skills" :key="index" class="fade-in-left" :class="{'hide-on-mobile': skill.hideOnMobile}">
       <a
         v-if="skill.link"
         :href="skill.link"
@@ -33,6 +33,10 @@ onMounted(() => {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: calc($space * 1.5);
+
+  .hide-on-mobile {
+    display: none;
+  }
 
   .skill-content {
     text-decoration: none;
@@ -66,6 +70,10 @@ onMounted(() => {
   #skill-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    .hide-on-mobile {
+      display: inline-block;
+    }
 
     .skill-content {
       transition: $transition;
