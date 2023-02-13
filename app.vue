@@ -2,7 +2,7 @@
 useHead({
   titleTemplate:
       (titleChunk) => {
-        const siteTitle = 'Benedikt Dalferth'
+        const siteTitle = 'Benedikt'
         return titleChunk ? `${titleChunk} – ${siteTitle}` : siteTitle
       }
 })
