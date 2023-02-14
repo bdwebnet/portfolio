@@ -20,6 +20,10 @@ const items = [
 header {
   padding: $space 0;
 
+  a {
+    background-image: none;
+  }
+
   .container {
     display: flex;
     justify-content: center;
