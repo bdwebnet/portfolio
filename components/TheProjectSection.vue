@@ -25,7 +25,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 a {
-  text-decoration: none;
+  background-image: none;
   color: inherit;
 
   @media (pointer: fine){

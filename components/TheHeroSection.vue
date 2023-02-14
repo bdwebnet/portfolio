@@ -36,6 +36,10 @@ onMounted(() => {
   min-height: 100vh;
   gap: $space;
 
+  a {
+    background-image: none;
+  }
+
   position: relative;
 
   h1 {

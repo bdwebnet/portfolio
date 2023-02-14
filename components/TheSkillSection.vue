@@ -34,6 +34,10 @@ onMounted(() => {
   grid-template-columns: repeat(3, 1fr);
   gap: calc($space * 1.5);
 
+  a {
+    background-image: none;
+  }
+
   .hide-on-mobile {
     display: none;
   }

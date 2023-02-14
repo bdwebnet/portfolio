@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 
   a {
-    text-decoration: none;
+    background-image: none;
   }
 }
 
@@ -114,18 +114,24 @@ button {
 }
 
 a {
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
+  padding-bottom: calc($space / 10);
+  background-image: linear-gradient(0deg, $primary, $primary);
+  background-position: 50% 100%;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  transition: background-size $transitionDuration,
+  background-position 0s $transitionDuration;
   color: $primary;
   display: inline-block;
-  transition: $transition;
 
   &:hover {
-    text-underline-offset: 0.4em;
+    background-position: 50% 100%;
+    background-size: 50% 1px;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    text-decoration: none;
+    background-image: none;
   }
 }
 

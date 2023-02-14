@@ -36,6 +36,10 @@ footer {
   margin-top: auto;
   padding: $space 0;
 
+  a {
+    background-image: none;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -50,6 +54,25 @@ footer {
       flex-wrap: wrap;
       gap: $space;
       width: 100%;
+
+      @media (min-width: $md) {
+        a {
+          display: inline-block;
+          padding-bottom: calc($space / 10);
+          background-image: linear-gradient(0deg, $primary, $primary);
+          background-position: 50% 100%;
+          background-size: 0 1px;
+          background-repeat: no-repeat;
+          transition:
+              background-size $transitionDuration,
+              background-position 0s $transitionDuration;
+
+          &:hover {
+            background-position: 50% 100%;
+            background-size: 100% 1px;
+          }
+        }
+      }
     }
 
     .social-icons {
@@ -93,9 +116,5 @@ footer {
       }
     }
   }
-}
-
-a {
-  text-decoration: none;
 }
 </style>

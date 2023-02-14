@@ -26,4 +26,5 @@ $space: 1em;
 
 $sectionGap: calc($space * 3);
 
-$transition: all 0.2s ease-in-out;
+$transitionDuration: 0.2s;
+$transition: all $transitionDuration ease-in-out;
