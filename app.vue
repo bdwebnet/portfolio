@@ -1,8 +1,10 @@
 <script setup>
+import meta from './utils/meta'
+
 useHead({
   titleTemplate:
       (titleChunk) => {
-        const siteTitle = 'Benedikt'
+        const siteTitle = meta.siteTitle
         return titleChunk ? `${titleChunk} – ${siteTitle}` : siteTitle
       }
 })

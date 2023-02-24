@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import meta from './utils/meta'
+
 export default defineNuxtConfig({
   ssr: true,
   telemetry: false,
@@ -6,9 +8,9 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Benedikt',
+      title: meta.siteTitle,
       meta: [
-        { name: 'description', content: 'BDs Portfolio' },
+        { name: 'description', content: meta.siteDescription },
         { name: 'theme-color', content: '#FFFFFA' },
         { name: 'msapplication-TileColor', content: '#FFFFFA' },
         { name: 'msapplication-TileImage', content: '/icons/ms-icon-144x144.png' }
@@ -67,9 +69,9 @@ export default defineNuxtConfig({
   ],
   pwa: {
     manifest: {
-      name: 'Benedikt',
+      name: meta.siteTitle,
       short_name: 'BD',
-      description: 'BDs Portfolio',
+      description: meta.siteDescription,
       lang: 'de',
       theme_color: '#FFFFFA',
       background_color: '#FFFFFA',
