@@ -9,6 +9,19 @@ onMounted(() => {
 
 <template>
   <div id="hero-section-wrapper" class="fade-in">
+    <div class="social-icons">
+      <div v-for="(social, index) in socials" :key="index">
+        <a
+          v-if="social.link"
+          :href="social.link"
+          target="_blank"
+          :title="social.title"
+        >
+          <div class="icon" :style="`fill: ${social.color}`" v-html="social.icon" />
+        </a>
+      </div>
+    </div>
+
     <h1>
       <a href="#hero-section">Hi!</a>
     </h1>
@@ -41,6 +54,48 @@ onMounted(() => {
   }
 
   position: relative;
+
+  .social-icons {
+    display: flex;
+    position: absolute;
+    top: 3vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $space;
+
+    .icon {
+      width: 1.5em;
+      filter: saturate(0) brightness(0);
+      opacity: 0.7;
+      transition: $transition;
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+
+      &:hover {
+        filter: none;
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (min-width: $md) {
+    .social-icons {
+      top: 5vh;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $xl) {
+    .social-icons {
+      width: fit-content;
+    }
+  }
 
   h1 {
     font-size: 5em;
