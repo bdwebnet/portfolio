@@ -79,6 +79,14 @@ onMounted(() => {
       display: inline-block;
     }
 
+    div.skill-content {
+      cursor: not-allowed;
+    }
+
+    a.skill-content {
+      cursor: pointer;
+    }
+
     .skill-content {
       transition: $transition;
 
@@ -90,7 +98,6 @@ onMounted(() => {
         filter: none;
         opacity: 1;
         transform: scale(110%);
-        cursor: pointer;
       }
     }
   }
