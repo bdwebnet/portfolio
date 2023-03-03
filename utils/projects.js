@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Tim Reiter',
     link: 'https://tim-reiter.de',
-    description: 'Tim Reiter ist ein Fahrer in der ADAC GT4 Germany. Um sich Interessierten und Sponsoren vorzustellen, erstellte ich eine Website mit Hilfe von WordPress und eigenen Plugins. Zudem entwickelte ich mit dem Kunden gemeinsam ein Design, welches auf der Website Anwendung fand.'
+    description: 'Tim Reiter ist ein Fahrer in der ADAC GT4 Germany. Um sich Interessierten und Sponsoren vorzustellen, erstellte ich eine Website mit Hilfe von WordPress und eigenen Plugins sowie einer datenschutzfreundlichen Integration von Instagram.'
   },
   {
     title: 'Lastenrad Ostfildern',
