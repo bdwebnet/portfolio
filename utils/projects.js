@@ -2,12 +2,36 @@ const projects = [
   {
     title: 'QRCheck',
     link: 'https://qrcheck.dev',
-    description: 'QRCheck ist eine App für Android und iOS, mit der QR-Codes gescannt, erstellt und URLs auf bösartige Websites überprüft werden können. Für die Überprüfung der verschiedenen URLs programmierte ich eine REST-API mit Hilfe von Laravel, die vom App-Entwickler angefragt wird. Zudem erstelle ich eine Landing Page mit dem JavaScript Framework Nuxt, die die Features von QRCheck hervorhebt.'
+    description: 'QRCheck ist eine App für Android und iOS, mit der QR-Codes gescannt, erstellt und URLs auf bösartige Websites überprüft werden können. Für die Überprüfung der verschiedenen URLs pflege ich eine REST-API mit Hilfe von Laravel, die vom App-Entwickler angefragt wird. Zudem erstellte ich eine Landing Page mit dem JavaScript Framework Nuxt, die die Features von QRCheck hervorhebt.',
+    tags: [
+      'Laravel',
+      'Nuxt',
+      'REST-API',
+      'Continuous Delivery (CD)',
+      'Hosting'
+    ]
   },
   {
     title: 'Geocaching Adventskalender',
     link: 'https://advent.dalgeo.de',
-    description: 'Geocaching ist die weltweit größte Schatzsuche. Für Rätselfreunde habe ich einen Adventskalender mit verschiedenen Rätseln erstellt. Diese wurden jeden Tag auf einer eigens mit Laravel entwickelten Website veröffentlicht. Auf der jeweiligen Rätsel-Unterseite konnte die Lösung direkt geprüft werden.'
+    description: 'Geocaching ist die weltweit größte Schatzsuche. Für Rätselfreunde habe ich einen Adventskalender mit verschiedenen Rätseln erstellt. Diese wurden jeden Tag auf einer eigens mit Laravel entwickelten Website veröffentlicht. Auf der jeweiligen Rätsel-Unterseite kann die Lösung direkt geprüft werden.',
+    tags: [
+      'Laravel',
+      'Laravel Livewire',
+      'Hosting'
+    ]
+  },
+  {
+    title: 'WolfMafia',
+    link: 'https://wolf.pagacards.app',
+    description: 'Für WolfMafia, ein offline Spiel-Assistent für das Gesellschaftsspiel "Mafia" bzw. "Werwolf", entwickelte ich mit Vue.js eine progressive Web-App, um das Spielen auch ohne installierter nativer App zu ermöglichen. Die Schnittstelle zwischen Web-App und nativer App ist ein QR-Code, der vom Gerät des Spielleiters abgescannt werden kann.',
+    tags: [
+      'Vue.js',
+      'Progressive Web-App',
+      'QR-Code-Scanner',
+      'Mehrsprachig',
+      'Hosting'
+    ]
   },
   {
     title: 'Tim Reiter',

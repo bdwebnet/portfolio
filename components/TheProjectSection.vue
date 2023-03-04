@@ -19,6 +19,12 @@ onMounted(() => {
 
         <p>{{ project.description }}</p>
       </a>
+
+      <div v-if="project.tags" class="tags">
+        <div v-for="(tag, index) in project.tags" :key="index" class="tag">
+          {{ tag }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -39,5 +45,19 @@ a {
       }
     }
   }
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em 1em;
+}
+
+.tags .tag {
+  border: $primary $borderWidth solid;
+  border-radius: $borderRadius;
+  padding: 0.25em 0.75em;
+  display: inline-block;
 }
 </style>
