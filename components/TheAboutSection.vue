@@ -9,7 +9,7 @@ onMounted(() => {
 <template>
   <div>
     <p class="fade-in-left">
-      <strong>Seit 7 Jahren</strong> bin ich als <strong>Web-Entwickler</strong> im Frontend und Backend tätig.
+      <strong>Seit 7 Jahren</strong> bin ich als <strong>Webentwickler</strong> im Frontend und Backend tätig.
       Dabei nutze ich Technologien wie <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> und
       <strong>PHP</strong> sowie dazu passende Frameworks wie <strong>Vue.js</strong>, <strong>Nuxt</strong> und
       <strong>Laravel</strong>.
@@ -21,7 +21,7 @@ onMounted(() => {
       <strong>Linux-Serveradministration</strong> bei und hoste Websites auf einem eigenen Server in der Cloud.
     </p>
     <p class="fade-in-left">
-      Seit meinem Abitur bin ich als <strong>selbstständiger Web-Entwickler</strong> tätig und setze vielfältige
+      Seit meinem Abitur bin ich als <strong>selbstständiger Webentwickler</strong> tätig und setze vielfältige
       Kundenprojekte um. <br>
       Um
       mein Wissen und meine Fähigkeiten weiter auszubauen, begann ich im September 2022 eine Ausbildung zum <strong>staatlich geprüften

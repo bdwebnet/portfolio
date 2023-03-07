@@ -27,7 +27,7 @@ onMounted(() => {
     </h1>
 
     <p id="introduction-text">
-      Ich bin <strong>Benedikt</strong>, ein Web-Entwickler aus dem Raum Stuttgart
+      Ich bin <strong>Benedikt</strong>, ein Webentwickler aus dem Raum Stuttgart
       mit dem Fokus auf Benutzerfreundlichkeit und Datenschutz.
     </p>
 
