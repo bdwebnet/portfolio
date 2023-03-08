@@ -4,9 +4,21 @@ const projects = [
     link: 'https://qrcheck.dev',
     description: 'QRCheck ist eine App für Android und iOS, mit der QR-Codes gescannt, erstellt und URLs auf bösartige Websites überprüft werden können. Für die Überprüfung der verschiedenen URLs pflege ich eine REST-API mit Hilfe von Laravel, die vom App-Entwickler angefragt wird. Zudem erstellte ich eine Landing Page mit dem JavaScript Framework Nuxt, die die Features von QRCheck hervorhebt.',
     tags: [
+      'In der Entwicklung',
       'Laravel',
       'Nuxt',
       'REST-API',
+      'Continuous Delivery (CD)',
+      'Hosting'
+    ]
+  },
+  {
+    title: 'Jugendbeteiligung Ostfildern',
+    link: 'https://jugend-ostfildern.de/',
+    description: 'Die Jugendbeteiligung Ostfildern ist seit letztem Jahr die Jugendvertretung in der Stadt Ostfildern bei Stuttgart. Als Teil des Öffentlichkeitsausschusses entwickle ich zurzeit die Website, um über die Jugendbeteiligung zu informieren. Bisher ist eine einfache Vorab-Version der Website erreichbar.',
+    tags: [
+      'In der Entwicklung',
+      'Nuxt',
       'Continuous Delivery (CD)',
       'Hosting'
     ]
